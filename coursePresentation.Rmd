@@ -1,0 +1,46 @@
+---
+title: "Developing Data Products Course Project"
+author: "Seher Can Akay"
+date: "12/6/2019"
+output: ioslides_presentation
+---
+
+## Objectives of the Assignment
+- Creating a Shiny Application
+- Creating a Reproducible Ptich Presentation
+- Publishing the app files on Github
+
+The Shiny Appication can be found on [https://sehercanakay.shinyapps.io/myapp2/](https://sehercanakay.shinyapps.io/myapp2/)
+
+The code for the project can be found on Github [https://github.com/sehercan/course-project-shiny](https://github.com/sehercan/course-project-shiny)
+
+
+## Data
+The data consists of daily air quality measurements in New York, May to September 1973.
+I will analyze the temperature changes by Ozone in the air:
+
+```{r}
+head(airquality)
+```
+
+## Application
+My application has two sections:
+
+- Side bar panel on the left
+- Main panel on the right
+
+**Side Bar Panel**
+
+Side Bar panel consists of a slider range and two checkboxes.
+
+Slider Range keeps the values from 1 to 150.
+
+Checkboxes helps the user to see/unsee different models.
+
+## Application
+
+**Main Panel**
+
+Main panel has a plot and estimated coefficients of the related model.
+
+The points and coefficients are changed by the user interaction on side bar panel.
